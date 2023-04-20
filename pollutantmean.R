@@ -14,6 +14,6 @@ pollutantmean <- function(diretory, pollutant, id = 1:332){
   # Return de mean of the pollutante across all monitors list in the "id"
   # vectors, ignoring NA values.
   id <- sprintf("%03d", id)
-  pollutnate <- read.table(paste(diretory, id, ".csv", sep = ""))
+  pollutant <- read.table(paste(diretory, id, ".csv", sep = ""))
   pollutant
 }

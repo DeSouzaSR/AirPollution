@@ -297,23 +297,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -376,7 +370,7 @@ monitors. The function ‘pollutantmean’ takes three arguments:
 ‘pollutantmean’ reads that monitors’ particulate matter data from the
 directory specified in the ‘directory’ argument and returns the mean of
 the pollutant across all of the monitors, ignoring any missing values
-coded as NA. In this <a href="https://d3c33hcgiwev3.cloudfront.net/_3b0da118473bfa0845efddcbe29cc336_pollutantmean-demo.html?Expires=1682121600&amp;Signature=PyyCI~zTatnqsiwyTtHDSWoLM9Cc5-MUNCMfnZcIT1UOuss6T-WaDFNqRpsHnb76v1ai-MFs3CYq~CFGNa61jMFITFnDPS5OBgXlK5Iu2sxbXxTktvBSqiEC090makRCKH3B4DmsSCYSkB1BLISwB4GcuP89yMuXaObmc7aLGuc_&amp;Key-Pair-Id=APKAJLTNE6QMUY6HBC5A">link</a>
+coded as NA. <a href="https://d3c33hcgiwev3.cloudfront.net/_3b0da118473bfa0845efddcbe29cc336_pollutantmean-demo.html?Expires=1682121600&amp;Signature=PyyCI~zTatnqsiwyTtHDSWoLM9Cc5-MUNCMfnZcIT1UOuss6T-WaDFNqRpsHnb76v1ai-MFs3CYq~CFGNa61jMFITFnDPS5OBgXlK5Iu2sxbXxTktvBSqiEC090makRCKH3B4DmsSCYSkB1BLISwB4GcuP89yMuXaObmc7aLGuc_&amp;Key-Pair-Id=APKAJLTNE6QMUY6HBC5A">Here</a>
 we have a demo of the function pollutantmean working.</li>
 <li>Part 2: Write a function that reads a directory full of files and
 reports the number of completely observed cases in each data file. The
